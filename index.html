@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OlhoSite - Projetos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #b30000; /* vermelho */
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #333;
+    }
+    nav button {
+      background: #444;
+      color: #fff;
+      border: none;
+      padding: 14px 20px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    nav button:hover {
+      background: #b30000;
+    }
+    .tabcontent {
+      display: none;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #222;
+      color: #fff;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>OlhoSite</h1>
+  <p>Projetos e Políticas da Olho</p>
+</header>
+
+<nav>
+  <button onclick="openTab('stypuff')">Stypuff</button>
+  <button onclick="openTab('elipton')">Elipton</button>
+  <button onclick="openTab('workstation')">Workstation</button>
+  <button onclick="openTab('politica')">Card de Política</button>
+</nav>
+
+<div id="stypuff" class="tabcontent">
+  <div class="card">
+    <h2>Projeto Stypuff</h2>
+    <p>O Stypuff é uma linguagem de programação experimental criada para rodar com alto desempenho dentro de ambientes web. 
+    Seu foco é integrar diretamente com HTML, permitindo que desenvolvedores criem aplicações rápidas e otimizadas.</p>
+  </div>
+</div>
+
+<div id="elipton" class="tabcontent">
+  <div class="card">
+    <h2>Projeto Elipton</h2>
+    <p>O Elipton é outra linguagem desenvolvida pela equipe Olho, voltada para desempenho máximo em aplicações complexas. 
+    Ela combina sintaxe simples com compilação eficiente, tornando-se ideal para projetos que exigem escalabilidade e velocidade.</p>
+  </div>
+</div>
+
+<div id="workstation" class="tabcontent">
+  <div class="card">
+    <h2>Projeto Workstation</h2>
+    <p>O Workstation é um ambiente de trabalho que integra Stypuff e Elipton em conjunto com linguagens tradicionais como <strong>C#</strong> e <strong>C++</strong>. 
+    Essa combinação permite criar soluções híbridas, aproveitando a performance das linguagens Olho e a robustez das linguagens clássicas.</p>
+  </div>
+</div>
+
+<div id="politica" class="tabcontent">
+  <div class="card">
+    <h2>Card de Política</h2>
+    <p>Tag da Licença: <strong>#75745216</strong></p>
+    <p>A Olho mantém um conjunto de regras políticas que orientam o uso de suas tecnologias. 
+    Essas regras garantem transparência, ética e responsabilidade em todos os projetos.</p>
+    <ul>
+      <li>Respeito às normas de privacidade</li>
+      <li>Uso responsável das linguagens Stypuff e Elipton</li>
+      <li>Compromisso com a segurança digital</li>
+      <li>Transparência em decisões e atualizações</li>
+    </ul>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2026 OlhoTeam - Todos os direitos reservados</p>
+</footer>
+
+<script>
+function openTab(tabName) {
+  var i, tabcontent;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  document.getElementById(tabName).style.display = "block";
+}
+// abrir Stypuff por padrão
+openTab('stypuff');
+</script>
+
+</body>
+</html>
